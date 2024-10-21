@@ -1,0 +1,66 @@
+
+
+.ppf-services-container {
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.ppf-example {
+  position: relative;
+  width: 100%;
+  height: auto; /* Allows height to adjust based on image */
+}
+
+.ppf-background {
+  width: 100%; /* Full width of the container */
+  height: 700px; /* Adjust height automatically */
+  display: block; /* Prevents bottom whitespace */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ppf-background {
+      height: auto; /* Allow height to adjust based on content */
+  }
+
+  .ppf-text {
+      top: auto;
+      bottom: 20px; /* Position text towards the bottom on mobile */
+      left: 10px; /* Reduce left spacing on smaller screens */
+      right: 10px; /* Ensure text doesn't overflow the container */
+      max-width: 90%; /* Increase width on mobile */
+      transform: translateY(0); /* Remove vertical centering */
+      padding: 15px; /* Adjust padding for smaller screens */
+      font-size: 16px; /* Adjust text size for readability on smaller screens */
+  }
+
+  .benefits-title {
+      font-size: 28px; /* Reduce title size on smaller screens */
+  }
+
+  .benefits-cards {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards */
+      gap: 15px; /* Adjust space between cards */
+  }
+
+  .benefit-card {
+      max-width: 100%; /* Allow cards to take full width on mobile */
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .ppf-text {
+      font-size: 14px; /* Further reduce text size for smaller screens */
+      padding: 10px; /* Further adjust padding */
+  }
+
+  .benefits-title {
+      font-size: 24px; /* Further reduce title size */
+  }
+
+  .benefit-card {
+      padding: 15px; /* Adjust padding for smallest screens */
+  }
+}

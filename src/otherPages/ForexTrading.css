@@ -1,0 +1,74 @@
+.forex-services-container {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  
+  .forex-example {
+   
+    width: 100%;
+    height: auto; /* Allow height to adjust based on image */
+  }
+  
+  .forex-background {
+    width: 100%; /* Full width of the container */
+    height:700px ; /* Adjust height automatically */
+    display: block; /* Prevents bottom whitespace */
+  }
+  
+  .forex-text {
+    width: 100%; /* Full width of the container */
+    color: white; /* Text color */
+    background: rgba(0, 0, 0, 0.5); /* Background for better readability */
+    padding: 10px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners */
+    text-align: center; /* Center text horizontally */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .benefits {
+    padding: 20px;
+  }
+  
+  .benefits-title {
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: hwb(240 25% 62%);
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .benefits-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .benefit-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    width: 25%;
+    height: 150px; /* Adjust width and height as needed */
+    box-shadow: 4px 6px 5px hwb(240 25% 62%);
+    text-align: center;
+  }
+  
+  .benefit-card h3 {
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .benefit-card {
+      max-width: 100%; /* Ensure card fits within the container */
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+    .forex-background{
+      width: 100%; /* Full width of the container */
+      height: 300px; /* Adjust height automatically */
+      display: block; /* Prevents bottom whitespace */
+
+    }
+  }
+  

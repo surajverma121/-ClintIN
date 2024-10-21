@@ -1,0 +1,119 @@
+/* Navbar styles */
+.header1 {
+  background-color: white; /* Light background */
+  height: 80px; /* Adjusted height */
+  border-bottom: 1px solid #e1e1e1; /* Subtle border */
+  position: relative; /* Positioning context for dropdown */
+  z-index: 1000; /* Ensure the navbar is on top */
+} 
+
+.navbar-logo {
+  border-radius: 20%;
+  height: 60px;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #0056b3/* Blue text color */
+}
+
+.navbar-toggler-icon {
+  border: 1px solid #0056b3; /* Blue border */
+}
+
+/* Navbar and dropdown links */
+.navbar-brand, 
+.navbar-nav .nav-link,
+.dropdown a {
+  color: #0056b3; /* Ensure all text is blue */
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    background-color: #ffffff; /* White background for dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggler {
+    margin-right: 0; /* Remove margin to align with the rest */
+    position: absolute;
+    top: 15px; /* Adjust to align with the brand logo */
+    right: 15px; /* Align to the right of the container */
+    z-index: 2000; /* Ensure it's above other elements */
+  }
+
+  /* Adjust dropdown styles */
+  .dropdown-menu {
+    position: static; /* Change to static for dropdown in mobile view */
+    width: 100%; /* Full width for dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Light background */
+    display: none; /* Hide dropdown by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+
+  /* Show dropdown on hover or toggle */
+  .dropdown:hover .dropdown-menu,
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #0056b3; /* Blue text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* Ensure it stays within the parent */
+  background-color: #ffffff; /* Light background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: auto; /* Adjust width according to content */
+  min-width: 160px; /* Minimum width to avoid collapsing */
+  z-index: 2000; /* Ensure dropdown is on top */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Show dropdown on hover or toggle */
+.dropdown:hover .dropdown-menu,
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown item hover effects */
+.dropdown-menu li:hover {
+  background-color: cornflowerblue; /* Blue background on hover */
+}
+
+.dropdown-menu li a {
+  color: hsl(211, 71%, 64%); /* Blue text color */
+}
+
+.dropdown-menu li:hover a {
+  color: #ffffff; /* White text color on hover */
+  background-color: #0056b3; /* Ensure background color stays blue */
+}
